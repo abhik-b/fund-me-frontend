@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Me</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript" defer></script>
+    <style>
+        div,
+        footer {
+            padding: 1em;
+            display: flex;
+            align-items: center;
+            gap: .5em;
+        }
+
+        input {
+            min-height: .5em;
+            padding: .5em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fund Me</h1>
+    <p>Welcome to my 1<sup>st</sup> smart contract</p>
+    <p id="message"></p>
+    <div>
+        <button id="connectButton">Connect to Metamask</button>
+        <button id="fundButton">Fund</button>
+        <button id="getBalanceButton">Get Balance</button>
+        <button id="withdrawButton">Withdraw</button>
+    </div>
+    <div>
+        <label for="fund">ETH Amount :</label>
+        <input type="number" id="ethAmount" placeholder="0.1" />
+    </div>
+
+    <footer>
+        <p>Coded by</p>
+
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/c/abhikb/videos">
+            <img src="https://img.shields.io/badge/AbhikB-D22B2B?style=for-the-badge&logo=youtube&logoColor=white"
+                alt="abhikb">
+        </a>
+    </footer>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
